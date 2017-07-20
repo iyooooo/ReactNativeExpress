@@ -75,5 +75,5 @@ console.log(b);
 ```
 
 # 思考：
-*（var， let , const 区别？function scope, block scope 区别？）
+[mou](http://mouapp.com/) var， let , const 区别？function scope, block scope 区别？
 
