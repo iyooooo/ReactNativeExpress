@@ -1,2 +1,2 @@
 # ReactNativeExpress
-*ReactNativeExpress
+ReactNativeExpress
