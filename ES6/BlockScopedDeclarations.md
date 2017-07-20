@@ -1,4 +1,4 @@
-##Block Scoped Declarations
+#Block Scoped Declarations
 
 *实际上解决了block(for, if, switch等)没有限制var变量作用域的问题。
 
@@ -74,6 +74,6 @@ console.log(b);
 1
 ```
 
-##思考：
+#思考：
 *（var， let , const 区别？function scope, block scope 区别？）
 
