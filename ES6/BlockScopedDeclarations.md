@@ -1,8 +1,8 @@
-#Block Scoped Declarations
+# Block Scoped Declarations
 
-*实际上解决了block(for, if, switch等)没有限制var变量作用域的问题。
+* 实际上解决了block(for, if, switch等)没有限制var变量作用域的问题。
 
-*使用var声明变量，block(for, if, switch等)中的变量和它同名的全局变量是一个“对象”，所以block中给var变量赋值会影响同名全局变量。
+* 使用var声明变量，block(for, if, switch等)中的变量和它同名的全局变量是一个“对象”，所以block中给var变量赋值会影响同名全局变量。
 ```javascript
 "use strict";
 
@@ -28,7 +28,7 @@ console.log(a);
 4
 ```
 
-*而，使用const, let声明变量，block(for, if, switch等)中的变量和它同名的全局变量是不同的“对象”，block中给const变量赋值不会影响同名全局变量。
+* 而，使用const, let声明变量，block(for, if, switch等)中的变量和它同名的全局变量是不同的“对象”，block中给const变量赋值不会影响同名全局变量。
 ```javascript
 "use strict";
 let b = 1;
@@ -74,6 +74,6 @@ console.log(b);
 1
 ```
 
-#思考：
+# 思考：
 *（var， let , const 区别？function scope, block scope 区别？）
 
