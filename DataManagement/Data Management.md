@@ -29,7 +29,7 @@ container 相当于MVC模式中的controller, 处理逻辑业务，数据更新�
 ## Example
 
 A basic Flux Standard Action:
-
+```javascript
 {
   type: 'ADD_TODO',
   payload: {
@@ -43,8 +43,7 @@ An FSA that represents an error, analogous to a rejected Promise:
   payload: new Error(),
   error: true
 }
-
-## Actions
+```
 
 An action MUST
 
