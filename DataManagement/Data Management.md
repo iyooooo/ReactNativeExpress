@@ -38,10 +38,10 @@ export default class App extends Component {
   state = {}
 
   componentWillMount() {
-    const {store} = this.props
+    const {store} = this.props   
 
-    const {todos} = store.getState()
-    this.setState({todos})
+    const {todos} = store.getState()  
+    this.setState({todos})   // state获取store中的缓存数据
 
     this.unsubscribe = store.subscribe(() => {
       const {todos} = store.getState()
@@ -87,8 +87,54 @@ export default class App extends Component {
 }
 ```
 
+## React Redux
 
+```javascript
+const mapStateToProps = (state) => ({
+  todos: state.todos,
+})
 
+class App extends Component {
+
+  onAddTodo = (text) => {
+    const {dispatch} = this.props
+
+    dispatch(actionCreators.add(text))
+  }
+
+  onRemoveTodo = (index) => {
+    const {dispatch} = this.props
+
+    dispatch(actionCreators.remove(index))
+  }
+
+  render() {
+    const {todos} = this.props
+
+    return (
+      <View>
+        <Title>
+          To-Do List
+        </Title>
+        <Input
+          placeholder={'Type a todo, then hit enter!'}
+          onSubmitEditing={this.onAddTodo}
+        />
+        <List
+          list={todos}
+          onPressItem={this.onRemoveTodo}
+        />
+      </View>
+    )
+  }
+}
+
+export default connect(mapStateToProps)(App) // 将state.todos、store.dispatch()映射到this.props。
+```
+
+## Redux Persist
+
+* React Redux 为内存缓存，Redux persist为“磁盘缓存”
 
 
 
