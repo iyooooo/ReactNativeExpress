@@ -8,19 +8,17 @@ import {
 
 export default class Footer extends Component {
 
-    
-
     remove = () => {
         console.log('Remove completed items')
     }
 
     render() {
 
-        const {children} = this.props
+        const {children, removeCompleted} = this.props
 
         return (
             <TouchableOpacity 
-                onPress={this.remove}
+                onPress={removeCompleted}
                 style={styles.container}
             >
                 <View>
@@ -44,7 +42,5 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 13,
         color: 'red',
-        
     }
-
 })

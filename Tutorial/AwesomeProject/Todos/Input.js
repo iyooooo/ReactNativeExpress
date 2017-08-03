@@ -30,10 +30,11 @@ export default class Input extends Component {
         return (
             <TextInput
                 style={styles.input}
+                returnKeyType={'done'}
                 value={text}
                 placeholder={placeholder}
                 onChangeText={this.onChangeText}
-                onSubmitEdiing={this.onSubmitEditing}
+                onSubmitEditing={this.onSubmitEditing}
             />
         )
     }

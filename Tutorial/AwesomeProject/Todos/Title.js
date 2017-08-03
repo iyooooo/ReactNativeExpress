@@ -14,13 +14,11 @@ export default class Title extends Component {
         const {children} = this.props
         console.log(this.props)
         return (
-            <TouchableOpacity style={styles.container}>
-                <View>
-                    <Text style={styles.title}> 
-                        {children}
-                    </Text>
-                </View>
-            </TouchableOpacity>
+            <View style={styles.container}>
+                <Text style={styles.title}> 
+                    {children}
+                </Text>
+            </View>
         )
     }
 }
