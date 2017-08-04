@@ -36,7 +36,6 @@ export default class Footer extends Component {
 const styles = StyleSheet.create({
     container:{
         padding: 15,
-        backgroundColor: 'skyblue',
     },
     footer:{
         textAlign: 'center',
