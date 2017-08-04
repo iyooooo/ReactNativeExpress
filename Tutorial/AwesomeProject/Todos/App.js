@@ -79,5 +79,4 @@ const styles = StyleSheet.create({
   },
 })
 
-
 export default connect(mapStateToProps)(App)

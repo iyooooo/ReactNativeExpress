@@ -9,8 +9,8 @@ import { AppRegistry } from 'react-native';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import {reducer} from './Todos/todoListRedux'
-import App from './Todos/App'
+import {reducer} from './todoListRedux'
+import App from './App'
 
 const store = createStore(reducer)
 
