@@ -57,6 +57,16 @@ export default class AppRouter extends Component {
                              title="Reddit Random"
                             />
                         </Scene>
+                        <Scene 
+                         key='tab_3' 
+                         title="Login" 
+                         >
+                            <Scene 
+                             key='Posts' 
+                             component={Login} 
+                             title="Login"
+                             />
+                        </Scene>
                     </Scene>
                 </Scene>
             </Router>
