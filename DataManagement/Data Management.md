@@ -26,7 +26,7 @@ container 相当于MVC模式中的controller, 处理逻辑业务，数据更新�
 
 ## action 
 
-action是一个普通对象，至少有一个type属性。{type: 'INCREMENT'}。type属性值可以为任意类型。action只有type, playload, error, meta 这四个属性。参见 [Flux Standard Action](https://github.com/acdlite/flux-standard-action)
+action是一个普通对象，至少有一个type属性。{type: 'INCREMENT'}。type属性值可以为任意类型。action只有type, playload, error, meta 这四个属性。参见 [Flux Standard Action](https://github.com/acdlite/flux-standard-action)。实际应用中type是必须，但也可以包含任意自定义属性。
 
 ## reducer
 
